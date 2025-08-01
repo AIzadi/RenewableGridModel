@@ -1,4 +1,5 @@
 # RenewableGridModel
+
 ![Release](https://img.shields.io/github/v/tag/Alzadi/RenewableGridModel?label=release&sort=semver&cacheSeconds=60)
 ![License](https://img.shields.io/github/license/Alzadi/RenewableGridModel?cacheSeconds=60)
 
@@ -21,8 +22,8 @@ This project provides a framework for system sizing, energy balancing, and feasi
 ## 📁 Repository Structure
 
 ```plaintext
-baseline_model/         ← Core v0.0.1 simulation code and input files
-revised_model/          ← (Planned) Refactored and modularized version
-LICENSE                 ← Apache 2.0 open-source license
-README.md               ← This file
-CHANGELOG.md            ← (Optional) Version history and improvements
+baseline_model/   ← Core v0.0.1 simulation code and input files
+revised_model/    ← (Planned) Refactored and modularized version
+LICENSE           ← Apache 2.0 open-source license
+README.md         ← This file
+CHANGELOG.md      ← (Optional) Version history and improvements
