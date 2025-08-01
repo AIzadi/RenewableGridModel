@@ -1,5 +1,5 @@
 # RenewableGridModel
-![GitHub release](https://img.shields.io/github/v/tag/Alzadi/RenewableGridModel?label=release&sort=semver)
+![Release](https://img.shields.io/badge/release-v0.0.1-blue.svg)
 ![License](https://img.shields.io/github/license/Alzadi/RenewableGridModel)
 
 **Octave/MATLAB-based simulation tool** for analyzing renewable energy systems, particularly photovoltaic (PV) and wind power generation, battery storage integration, and grid interaction dynamics.
