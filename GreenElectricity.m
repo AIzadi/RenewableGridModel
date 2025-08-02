@@ -1,3 +1,26 @@
+% =========================================================================
+% Project      : Green Electricity
+% Filename     : GreenElectricity.m
+% Author       : Mohammad Izadi
+% Created On   : 01-06-2024
+% Last Updated : 31-07-2025
+% Version      : v0.1.1 - Main code for renewable green electricity analysis
+% Modified By  : Ali Izadi -
+%
+% Description  :
+% Main script for analyzing PV and Wind capacity factors and system sizing.
+% Dependencies :
+%   - inputs.m
+%   - PV_Wind_CapacityFactor.m
+%   - irradiation19.csv
+%   - Velocity19.csv
+%   - pv_capacity_factors_typical_year_8760.csv
+%   - wind_capacity_factors_typical_year_8760.csv
+% Usage Notes  :
+%   - Edit 'inputs.m' to change country or system parameters.
+% Change Log   :
+%   v0.1.1 - 31/07/2025 - Initial header added, structure aligned with inputs.m
+% =========================================================================
 pkg load io
 %% Balance equation:     P_ren_tot + P_b + P_g = P_dem
 % P_ren>=0 ; P_dem>=0
@@ -9,8 +32,8 @@ pkg load io
 clear all;clc; close all
 warning("off");
 inputs;
-irradiationdata  = cell2mat(irradiationdata);
-winddata         = cell2mat(windspeeddata);
+%irradiationdata  = cell2mat(irradiationdata);
+%winddata         = cell2mat(windspeeddata);
 
 
 % Create a vector for the months based on the number of data points in each month
@@ -39,7 +62,8 @@ for alpha=0:0.1:1
   Best= max(Criteria);
   indx = find(Criteria == Best);
   gamma = Gamma(indx);
-  disp(['Best Gamma: ', num2str(Gamma(indx))]);
+  disp(['@Alpha = ', num2str(alpha), ', Best Gamma is = ', num2str(Gamma(indx))]);
+
 
   for beta=0:0.5:5
       run('Alpha_Beta.m');
