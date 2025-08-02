@@ -9,7 +9,7 @@ This project provides a framework for system sizing, energy balancing, and feasi
 
 ---
 
-## 🔧 Features
+## 🚀 Features
 
 - Hourly simulation of PV and wind generation using capacity factor datasets
 - Battery storage modeling with charge/discharge logic
@@ -19,11 +19,11 @@ This project provides a framework for system sizing, energy balancing, and feasi
 
 ---
 
-## 📁 Repository Structure
+## 📂 Repository Structure
 
-```plaintext
-baseline_model/   ← Core v0.0.1 simulation code and input files
-revised_model/    ← (Planned) Refactored and modularized version
-LICENSE           ← Apache 2.0 open-source license
-README.md         ← This file
-CHANGELOG.md      ← (Optional) Version history and improvements
+```text
+baseline_model/     <- Core v0.0.1 simulation code and input files
+revised_model/      <- (Planned) Refactored and modularized version
+LICENSE             <- Apache 2.0 open-source license
+README.md           <- This file
+CHANGELOG.md        <- (Optional) Version history and improvements
